@@ -18,7 +18,7 @@ class TableViewController: UITableViewController {
         
         /// TableViewCell Registration
         self.tableView.register(UINib(nibName: K.cellNibName, bundle: nil), forCellReuseIdentifier: K.cellIdentifier1)
-        
+
         /// Getting Data
         self.fetchData()
         topPopChart = localDB.objects(TopPopChart.self).sorted(byKeyPath: K.sortByPosition, ascending: true)
@@ -29,7 +29,7 @@ class TableViewController: UITableViewController {
 
     
     /// Pull to Refresh
-    @IBAction func pullToRefreh(_ sender: UIRefreshControl) {
+    @IBAction func pullToRefresh(_ sender: UIRefreshControl) {
         self.fetchData()
         topPopChart = localDB.objects(TopPopChart.self).sorted(byKeyPath: K.sortByPosition, ascending: true)
         sender.endRefreshing()

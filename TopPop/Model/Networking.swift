@@ -21,20 +21,20 @@ var albumId: Int?
 
 extension TableViewController {
     func fetchData() {
-        AF.request(url1, method: .get).responseDecodable(of: DeezerChart.self) {
-            response in
-            deezerChart = response.value
-            self.saveData()
+                AF.request(url1, method: .get).responseDecodable(of: DeezerChart.self) {
+                    response in
+                    deezerChart = response.value
+                    self.saveData()
         }
     }
 }
 
 extension DetailViewController {
     func fetchData() {
-        AF.request(url2 + "/\(albumId!)" + "/tracks", method: .get).responseDecodable(of: AlbumTracks.self) {
-            response in
-            albumTracks = response.value
-            self.tableView.reloadData()
+                AF.request(url2 + "/\(albumId!)" + "/tracks", method: .get).responseDecodable(of: AlbumTracks.self) {
+                    response in
+                    albumTracks = response.value
+                    self.tableView.reloadData()
         }
     }
 }

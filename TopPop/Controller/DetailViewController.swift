@@ -24,7 +24,7 @@ class DetailViewController: UIViewController {
         self.albumName.text = topPopChart[arrayIndex!].albumName
         self.artistName.text = topPopChart[arrayIndex!].artistName
         
-        fetchData()
+        self.fetchData()
         
         self.tableView.reloadData()
     }

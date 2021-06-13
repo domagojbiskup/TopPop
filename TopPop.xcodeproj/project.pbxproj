@@ -60,6 +60,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C29AED42676D1BE002E5CAF /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				5C64002D2645680800390B46 /* AppDelegate.swift */,
+				5C64002F2645680800390B46 /* SceneDelegate.swift */,
+				5C6400362645681100390B46 /* Assets.xcassets */,
+				5C6400382645681100390B46 /* LaunchScreen.storyboard */,
+				5C64006526456D4100390B46 /* Constants.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		5C6400212645680700390B46 = {
 			isa = PBXGroup;
 			children = (
@@ -81,15 +93,11 @@
 		5C64002C2645680800390B46 /* TopPop */ = {
 			isa = PBXGroup;
 			children = (
-				5C64002D2645680800390B46 /* AppDelegate.swift */,
-				5C64002F2645680800390B46 /* SceneDelegate.swift */,
 				5C64004D26456A4200390B46 /* Model */,
 				5C64004C26456A2C00390B46 /* View */,
 				5C64004A26456A2100390B46 /* Controller */,
-				5C6400362645681100390B46 /* Assets.xcassets */,
-				5C6400382645681100390B46 /* LaunchScreen.storyboard */,
+				5C29AED42676D1BE002E5CAF /* SupportingFiles */,
 				5C64003B2645681100390B46 /* Info.plist */,
-				5C64006526456D4100390B46 /* Constants.swift */,
 			);
 			path = TopPop;
 			sourceTree = "<group>";
@@ -417,7 +425,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TopPop/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,7 +445,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TopPop/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
